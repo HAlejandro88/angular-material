@@ -9,18 +9,23 @@ import { MaterialModule } from './material.module';
 
 import { MomentModule } from 'angular2-moment';
 import 'hammerjs';
+import { AnswerComponent } from './answer/answer.component';
+import { FormsModule,ReactiveFormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuestionDetailComponent
+    QuestionDetailComponent,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MomentModule
+    MomentModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
